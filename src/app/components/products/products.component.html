@@ -1,0 +1,122 @@
+<div class="inner-nav">
+  <nav class="nav-box">
+    <h1 class="header-title">iPhone</h1>
+    <ul>
+      <li class="inner-box"><a routerLink="/">Home / </a></li>
+      <li class="inner-box"><a routerLink="/">Products / </a></li>
+      <li class="inner-box"><a routerLink="/">Smart Phones / </a></li>
+      <li class="inner-box"><a routerLink="/">iPhone</a></li>
+    </ul>
+  </nav>
+</div>
+
+<div class="main-container">
+  <div class="select-container">
+  <h1>Products</h1>
+  <br>
+  <div>
+    <label class="aside-container">Smartphones
+      <input type="checkbox" checked="checked">
+      <span class="checkmark"></span>
+    </label>
+    <label class="aside-container">Laptops
+      <input type="checkbox">
+      <span class="checkmark"></span>
+    </label>
+    <label class="aside-container">Fragrances
+      <input type="checkbox">
+      <span class="checkmark"></span>
+    </label>
+    <label class="aside-container">Skincare
+      <input type="checkbox">
+      <span class="checkmark"></span>
+    </label>
+    <label class="aside-container">Groceries
+      <input type="checkbox">
+      <span class="checkmark"></span>
+    </label>
+    <label class="aside-container">Home decoration
+      <input type="checkbox">
+      <span class="checkmark"></span>
+    </label>
+    <label class="aside-container">Furniture
+      <input type="checkbox">
+      <span class="checkmark"></span>
+    </label>
+    <label class="aside-container">Tops
+      <input type="checkbox">
+      <span class="checkmark"></span>
+    </label>
+    <label class="aside-container">Women's dresses
+      <input type="checkbox">
+      <span class="checkmark"></span>
+    </label>
+    <label class="aside-container">Women's shoes
+      <input type="checkbox">
+      <span class="checkmark"></span>
+    </label>
+    <label class="aside-container">Men's shirts
+      <input type="checkbox">
+      <span class="checkmark"></span>
+    </label>
+    <label class="aside-container">Men's shoes
+      <input type="checkbox">
+      <span class="checkmark"></span>
+    </label>
+    <label class="aside-container">Men's watches
+      <input type="checkbox">
+      <span class="checkmark"></span>
+    </label>
+    <label class="aside-container">Women's watches
+      <input type="checkbox">
+      <span class="checkmark"></span>
+    </label>
+    <label class="aside-container">Women's bags
+      <input type="checkbox">
+      <span class="checkmark"></span>
+    </label>
+    <label class="aside-container">Women's jewellery
+      <input type="checkbox">
+      <span class="checkmark"></span>
+    </label>
+    <label class="aside-container">Sunglasses
+      <input type="checkbox">
+      <span class="checkmark"></span>
+    </label>
+    <label class="aside-container">Automotive
+      <input type="checkbox">
+      <span class="checkmark"></span>
+    </label>
+    <label class="aside-container">Motorcycle
+      <input type="checkbox">
+      <span class="checkmark"></span>
+    </label>
+    <label class="aside-container">Lighting
+      <input type="checkbox">
+      <span class="checkmark"></span>
+    </label>
+  </div>
+</div>
+
+<div class="container">
+  <div class="inner-container" *ngFor="let data of listData[0] | dataFilter: searchTerm; index as i">
+    <div class="data">
+      <img class="image" src="{{ data.thumbnail }}" alt="{{ data.title }}">
+      <h4 class="title box">{{data.title}}</h4>
+      <p class="description box">{{ data.description }}</p>
+      <div class="box">
+        <span class="price">{{ data.price }} <span class="currency">USD</span></span>
+        <span class="discount">{{ data.discountPercentage}} <span class="currency">USD</span></span>
+      </div>
+      <p class="box"><span class="box-title">Brand: </span><span class="box-desc">{{ data.brand }}</span></p>
+      <p class="box"><span class="box-title">Category: </span><span class="box-desc">{{ data.category }}</span></p>
+      <p class="box"><span class="box-title">In stock: </span><span class="box-desc">{{ data.stock }}</span></p>
+      <div class="box rating-box">
+        <span class="fa fa-star checked" style="color:rgb(253, 218, 13);"></span>
+        <span class="rating">{{ data.rating }} <span style="color:rgb(56,56,56)">(11)</span></span>
+      </div>
+      <button type="button" class="button box">ADD TO CART</button>
+    </div>
+  </div>
+</div>
+</div>

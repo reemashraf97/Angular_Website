@@ -1,0 +1,43 @@
+<div class="container">
+  <form *ngIf="!isLoggedIn" class="form-container" name="form" (ngSubmit)="f.form.valid && onSubmit()" #f="ngForm" >
+    <div>
+      <img class="logo" src="assets/images/logo-white.png" alt="logo">
+    </div>
+    <div>
+      <h1 class="first-header">Log in to your account</h1>
+    </div>
+    <div>
+      <p class="second-header">Welcome back! Please enter your details.</p>
+    </div>
+    <div>
+      <label class="label" for="email">Email</label>
+      <input type="email" id="email" class="inner-box"
+      placeholder="Enter your email" [(ngModel)]="form.email"
+      name="email" #email="ngModel" required
+      [ngClass]="{ 'is-invalid': f.submitted && email.errors }">
+      <div *ngIf="email.errors && f.submitted" class="alert">
+        Email is required!
+      </div>
+    </div>
+    <div>
+      <label class="label" for="password">Password</label>
+      <input type="password" id="password"
+      class="inner-box" placeholder="********"
+      [(ngModel)]="form.password" name="password" #password="ngModel" required
+      [ngClass]="{ 'is-invalid': f.submitted && password.errors }">
+      <div *ngIf="password.errors && f.submitted">
+        <div *ngIf="password.errors['required']" class="alert">Password is required</div>
+        <div *ngIf="password.errors['minlength']" class="alert">
+          Password must be at least 6 characters
+        </div>
+      </div>
+    </div>
+    <div>
+      <button class="inner-box button" type="submit">Sign in</button>
+      <div *ngIf="f.submitted && isLoginFailed"  role="alert" class="alert">
+        Login failed: {{ errorMessage }}
+      </div>
+    </div>
+  </form>
+</div>
+<router-outlet></router-outlet>

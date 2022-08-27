@@ -1,0 +1,61 @@
+.container {
+  width: 100%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+.form-container {
+  width: 30%;
+  margin: 0 35% 0 35%;
+  display: grid;
+  grid-template-rows: repeat(6, auto);
+  grid-template-columns: auto;
+}
+.logo {
+  width: 4vw;
+  height: 8vh;
+  grid-row: auto;
+  margin-left: 13.3vw;
+}
+.first-header {
+  text-align: center;
+  grid-row: auto;
+  font-size: 35px;
+}
+.second-header {
+  margin-top: 10px;
+  grid-row: auto;
+  text-align: center;
+  color: rgb(120,120,120);
+  font-size: 19px;
+}
+.label {
+  display: block;
+  margin: 7% 0 1% 0;
+}
+.inner-box {
+  border: 2px solid rgb(190,190,190);
+  padding: 10px 0px 10px 14px;
+  width: 100%;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+.button {
+  margin: 7% 0% 0% 0%;
+  background-color: #5ce1e6;
+  border: none;
+  cursor: pointer;
+}
+.alert {
+  background-color: bisque;
+  border: 2px solid bisque;
+  padding: 1%;
+  margin-top: 1%;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}

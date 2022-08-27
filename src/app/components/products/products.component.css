@@ -1,0 +1,141 @@
+.inner-nav {
+  width: 100%;
+  margin-top: 2%;
+}
+.nav-box {
+  width: 40%;
+  display: grid;
+  margin-right: 55%;
+  margin-left: 5%;
+}
+.inner-box {
+  grid-column: auto;
+  margin-right: 2%;
+  display: inline;
+  text-decoration: none;
+}
+.inner-box a {
+  text-decoration: none;
+  color: rgb(56,56,56);
+}
+.inner-box a:active, a:hover {
+  font-weight: bold;
+}
+.header-title {
+  margin-bottom: 2%;
+  font-size: 22px;
+}
+.main-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(6, auto);
+}
+.select-container {
+  width: max-content;
+  margin: 35% 0% 0 30%;
+  padding: 20%;
+  height: 9%;
+  border: 2px solid rgb(220,220,220);
+  border-radius: 10px;
+  grid-column: 1 / auto;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+.aside-container {
+  font-size: 20px;
+  display: block;
+  padding: 2%;
+  width: max-content;
+}
+.container {
+  grid-column: 3 / auto;
+  width: 82%;
+  height: 90%;
+  margin: 5% 3% 5% 15%;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-template-rows: repeat(3, auto);
+  column-gap: 30px;
+  row-gap: 30px;
+}
+.inner-container {
+  border-radius: 10px;
+  border: 1px solid rgb(220,220,220);
+  padding: 5px;
+  grid-row: auto;
+  grid-column: auto;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+.image {
+  width: 100%;
+  height: 350px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+.title {
+  font-weight: bold;
+  font-size: 20px;
+  margin: 1% 0 1% 0;
+}
+.box {
+  height: 40px;
+  margin: 1%;
+}
+.description {
+  font-weight: lighter;
+  margin-bottom: 20px;
+  font-size: 18px;
+  overflow: hidden;
+  color: rgb(56,56,56);
+}
+.price {
+  font-weight: bold;
+  text-decoration: line-through;
+  margin-right: 30px;
+}
+.discount {
+  font-weight: bold;
+}
+.currency {
+  font-weight: lighter;
+}
+.box-desc{
+  font-weight: bold;
+}
+.box-title {
+  color: rgb(56,56,56);
+}
+.button {
+  width: 100%;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  height: 50px;
+  font-weight: bold;
+  border: none;
+  background-color: #5ce1e6;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+.button:hover {
+  background-color: rgb(144,144,144);
+}
+.rating {
+  font-weight: bold;
+  font-size: 23px;
+  color: rgb(253, 218, 13);
+  margin-left: 5px;
+}
+.rating-box {
+  float: right;
+}

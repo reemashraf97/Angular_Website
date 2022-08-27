@@ -1,0 +1,36 @@
+.header {
+  width: 100%;
+}
+.container {
+  width: 90%;
+  margin: 0% 5% 0% 5%;
+  display: grid;
+  grid-template-columns: repeat(10, auto);
+}
+.logo {
+  grid-column: 1 / auto;
+  height: 10vh;
+  width: 10vw;
+}
+.inner-header {
+  text-decoration: none;
+  color: rgb(120,120,120);
+  font-size: 24px;
+  margin-top: 13%;
+  cursor: pointer;
+}
+.home {
+  grid-column: 2 / auto;
+  text-align: left;
+  margin-left: -3vw;
+}
+.login {
+  grid-column: 10 / span 1;
+  text-align: right;
+}
+.line {
+  background-color: rgb(120,120,120);
+  padding: 0.5px;
+  width: 100%;
+  margin-top: 0vh;
+}
